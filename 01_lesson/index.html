@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Kevin Lemus" />
+  <meta name="description" content="This page contains a lot information about my first website" />
+  <title>My first web page</title>
+  <link rel="icon" href="html5.png" type="image/x-icon" />
+  <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>My goal for vacations</h1>
+
+
+
+    <nav aria-label="Primary-navigation">
+      <ul>
+        <li>
+          <a href="#html">Learning HTML</a>
+        </li>
+        <li>
+          <a href="#vacation">PLanning a Vacation</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr />
+  <main>
+    <article id="HTML">
+      <h2>Im ready to learn HTML</h2>
+      <p>This is my first web page</p>
+      <section>
+        <h3>HTML5</h3>
+        <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="Im learning HTML5" width="300" height="300" />
+        <figure>
+          <figcaption>An Example of HTML5 code</figcaption>
+          <p>
+            <code>&lt;h1&gt; hello word! &lt;/h1&gt;</code>
+          </p>
+        </figure>
+      </section>
+
+      <section>
+        <h3>My daily schedule</h3>
+        <p>this is the list:</p>
+        <ol>
+          <li>... I learn more about web dev.</li>
+          <li>... I plan out my schedule.</li>
+          <li>
+            ... I user resgources from
+            <abbr title="Mozillla developer network">
+              <a href="https://developer.mozilla.org/">MDN</a> </abbr>.
+          </li>
+        </ol>
+        <aside>
+          <details>
+            <summary>Guess <mark> the number of hours </mark> i code for day</summary>
+            <p>I start at <time datetime="08:00"> 8 am </time> and i write code for <time datetime="PT3H">3 hours</time>
+              every day</p>
+          </details>
+        </aside>
+        <br>
+
+        <table>
+          <caption>My daily schedule</caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am -</time>
+                <time datetime="11:00">11am</time>
+              </td>
+              <td>Write code</td>
+            </tr>
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am - </time>
+                <time datetime="12:00">12pm</time>
+              </td>
+              <td>Eat lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm - </time>
+                <time datetime="17:00">5pm</time>
+              </td>
+              <td>Stundie for other courses </td>
+            </tr>
+            <tr>
+              <th scope="row">evening</th>
+              <td rowspan="2"> ALL other Times</td>
+              <td>Free time</td>
+            </tr>
+            <tr>
+              <th scope="row">Night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">And thast what i do every, 5 days a week. just eat, sleep, code.. and
+                recharge!
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+      </section>
+    </article>
+    <hr />
+
+    <article id="vacation">
+      <h2>Im alsom planning a vacation</h2>
+      <p>I've working been working hard and <em>really need a getway.</em>.</p>
+      <p>
+        i live in <abbr title="new jersey">NJ</abbr> so i want got to barcelona
+      </p>
+      <Section>
+        <h3>Places i like to visit:</h3>
+        <ul>
+          <li>
+            <p>I've heard good things about the caribbean.</p>
+
+            <figure>
+              <img src="img/caribbean.jpg" alt="Caribber Beach" title="i want to visit a caribbean beach." width="400"
+                height="225" loading="lazy" />
+              <figcaption>Caribbean Beach Getway</figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <p>I've heard good things about the caribbean.</p>
+
+            <address>
+              <br />Republica dominicana<br />
+              <br />En algun lugar del mundo<br />
+            </address>
+            <figure>
+              <img src="img/vacation.jpg" alt="cancun Vacation" title="It's 5 o'clokc somewhere!" width="400"
+                height="267" loading="lazy" />
+              <figcaption>A caribbean Vacation image</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </Section>
+      <!-- TODO: ADD More places-->
+
+      <section>
+        <h3>Places i want to avoid</h3>
+        <dl>
+          <dt>North pole</dt>
+          <dd>i hear this is <strong> cold </strong></dd>
+
+          <dt>South pole</dt>
+          <dd>this is also cold.</dd>
+          <dt>Mountain tops</dt>
+          <dd>these are also cold</dd>
+        </dl>
+      </section>
+    </article>
+
+    <hr>
+
+    <article id="Contact">
+      <h2>Conctact me </h2>
+      <p>I'd really like to hear from you</p>
+
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Persnal Inf</legend>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+          </p>
+          <p>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="doe" autocomplete="on" required>
+          </p>
+
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+          </p>
+
+          <p>
+            <label for="phone">phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required>
+          </p>
+          <p>
+            <label for="decade">Favorite decade:</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+          </p>
+          <p>
+            <label for="coffee">favorite coffee</label>
+            <select name="coffee" id="coffee" multiple size="5">
+              <optgroup label="Coffees">
+                <option value="regular coffee">regular coffee</option>
+                <option value="iced coffee">iced coffee</option>
+              </optgroup>
+              <optgroup label="expresso drink">
+                <option value="Latte">Latte</option>
+                <option value="chapuccino">chapuccino</option>
+                <option value="cortado">cortado</option>
+                <option value="Americano">Americano</option>
+              </optgroup>
+              <option value="Other">Other</option>
+            </select>
+          </p>
+          <!-- <p>
+          <label for="coffee">Favorite coffee</label>
+          <input type="text" name="Coffee" id="coffee" list="coffee-list">
+          <datalist id="coffee-list">
+            <option value="coffee">
+            <option value="latte">
+            <option value="espresso">
+            <option value="cortado">
+            <option value="americano">
+            <option value="other">
+          </datalist>
+        </p> -->
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>
+            what is your favorite food?
+          </legend>
+          <p>
+            <input type="radio" name="food" id="taco" value="taco">
+            <label for="taco">Tacos</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">pizza</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="others" value="others">
+            <label for="others">others</label>
+          </p>
+
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Do you have pets?</legend>
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+            <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat">
+            <label for="cat">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="Fish" value="Fish">
+            <label for="Fish">Fish</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="OthersPets" value="OthersPets">
+            <label for="OthersPets">Other?</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend> Send me a note </legend>
+          <label for="message">Your Message</label>
+          <br>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="Reset">Reset</button>
+      </form>
+    </article>
+  </main>
+  <hr />
+  <footer>
+    <p>
+      &lt;&lt;&lt; &copy; <a href="about.html">KevinLemus</a> &gt;&gt;&gt;
+    </p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+</body>
+
+</html>
